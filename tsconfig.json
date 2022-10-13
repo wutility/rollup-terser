@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "lib": [
+      "ES2019"
+    ],
+    "outDir": "dist",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "noEmitOnError": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "sourceMap": true,
+    "strict": false,
+    "target": "es2019",
+    "declaration": true
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    "test"
+  ],
+  "include": [
+    "src/**/*",
+    "types/**/*"
+  ]
+}

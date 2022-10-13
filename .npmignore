@@ -1,0 +1,16 @@
+node_modules/
+src/
+tests/
+temp/
+
+yarn.lock
+package-lock.json
+
+.gitignore
+.cache
+.vscode
+.babelrc
+
+rollup.config.mjs
+rollup.config.js
+tsconfig.json

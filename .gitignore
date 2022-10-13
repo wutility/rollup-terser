@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build/
+temp/
+
+.github
+.vscode
+.cache
+
+*.zip
+*.rar
+
+package-lock.json
+yarn.lock
