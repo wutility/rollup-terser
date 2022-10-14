@@ -1,6 +1,6 @@
 # Rollup terser plugin
 
-Rollup plugin to minify generated bundle. Uses [terser](https://github.com/terser/terser) under the hood.
+[Rollup](https://github.com/rollup/rollup) [plugin](https://rollupjs.org/guide/en/#plugin-development) to minify generated bundle. Uses [terser](https://github.com/terser/terser) under the hood.
 
 # Install
 

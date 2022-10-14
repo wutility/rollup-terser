@@ -3,14 +3,14 @@ import { minify, MinifyOptions } from "terser";
 
 export function terser(options?: MinifyOptions) {
 	return {
-		name: 'transform-code',
+		name: 'minify-code',
 		async renderChunk(code: string, chunk: any, outputOptions: OutputOptions) {
 
 			const defaultOptions: MinifyOptions = {
 				module: outputOptions.format === "es" || outputOptions.format === "esm",
 				toplevel: outputOptions.format === "cjs",
-				sourceMap: false,
-				...options
+				...options,
+				sourceMap: false
 			};
 
 			const result = await minify(code, defaultOptions);
