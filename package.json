@@ -1,6 +1,6 @@
 {
   "name": "rollup-terser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "commonjs",
   "description": "Rollup plugin to minify generated bundle",
   "types": "./dist/index.d.ts",
@@ -21,7 +21,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "rollup -c",
+    "build": "NODE_ENV=production rollup -c",
     "test": "jest"
   },
   "dependencies": {

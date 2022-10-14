@@ -2,6 +2,9 @@ const typescript = require('@rollup/plugin-typescript');
 const cjs = require('@rollup/plugin-commonjs');
 // const { nodeResolve } = require('@rollup/plugin-node-resolve');
 
+const isProduction = process.env.NODE_ENV === 'production';
+console.log('isProduction => ', isProduction);
+
 module.exports = {
   strictDeprecations: true,
   input: "src/index.ts",
@@ -9,17 +12,17 @@ module.exports = {
     {
       file: 'dist/index.js',
       format: 'cjs',
-      sourcemap: true,
+      sourcemap: !isProduction,
     },
     {
-      file: 'dist/index.es.js',
+      file: 'dist/index.mjs',
       format: 'es',
-      sourcemap: true,
+      sourcemap: !isProduction,
     }
   ],
   plugins: [
     cjs(),
     // nodeResolve(),
-    typescript({ sourceMap: true, removeComments: true })
+    typescript({ sourceMap: !isProduction, removeComments: true })
   ]
 };
