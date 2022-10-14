@@ -7,16 +7,16 @@
 # Install
 
 ```shell
-yarn add -D rollup-plugin-terser
+yarn add -D rollup-terser
 # Or with npm:
-npm i -D rollup-plugin-terser
+npm i -D rollup-terser
 ```
 
 # Usage
 
 ```js
 import { rollup } from "rollup";
-import { terser } from "rollup-plugin-terser";
+import { terser } from "rollup-terser";
 
 rollup({
   input: "main.js",
